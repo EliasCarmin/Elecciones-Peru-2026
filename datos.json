@@ -1,46 +1,88 @@
-[{
+[
+{
   "id": 1,
   "nombre": "César Acuña Peralta",
-  "image_url":"https://upload.wikimedia.org/wikipedia/commons/b/bf/C%C3%A9sar_Acu%C3%B1a_Peralta.jpg",
   "partido": "Alianza para el Progreso",
   "intentos_presidenciales": 3,
-  "cargos_principales": [
-    "Congresista de la República (2000-2006)",
-    "Alcalde Provincial de Trujillo (2007-2014)",
-    "Gobernador Regional de La Libertad (2015, 2023-2025)"
+  "datos_personales": {
+    "fecha_nacimiento": "1952-08-10",
+    "lugar_nacimiento": "Ayaqui, Tacabamba, Chota, Cajamarca",
+    "familia": {
+      "padre": "Héctor Acuña Cabrera",
+      "madre": "Clementina Peralta Alvarado",
+      "hermanos": 11,
+      "familiares_en_politica": [
+        "Virgilio Acuña",
+        "Humberto Acuña",
+        "Héctor Acuña",
+        "Mary Acuña",
+        "Richard Acuña"
+      ]
+    }
+  },
+  "formacion": {
+    "pregrado": "Ingeniería Química – Universidad Nacional de Trujillo",
+    "postgrado": [
+      "Maestría en Dirección Universitaria – Universidad de los Andes (Colombia)",
+      "Maestría en Administración de la Educación – Universidad de Lima",
+      "Doctorado en Educación – Universidad Complutense de Madrid",
+      "Posdoctorado en Comunicación, Educación y Cultura – Universidad Santo Tomás (Colombia)"
+    ]
+  },
+  "trayectoria_politica": {
+    "cargos": [
+      "Congresista de la República (2000-2006)",
+      "Alcalde Provincial de Trujillo (2007-2014)",
+      "Gobernador Regional de La Libertad (2015, 2023-2025)",
+      "Fundador y líder de Alianza para el Progreso (APP)"
+    ],
+    "candidaturas_presidenciales": [
+      { "anio": 2016, "resultado": "Excluido" },
+      { "anio": 2021, "resultado": "No pasó a segunda vuelta" },
+      { "anio": 2026, "resultado": "Candidato" }
+    ]
+  },
+  "aspectos_positivos": [
+    "Historia de superación personal desde un origen rural y de bajos recursos",
+    "Fundador de uno de los partidos con mayor presencia territorial en el país",
+    "Amplia experiencia en gestión municipal y regional",
+    "Impulsor de un importante conglomerado educativo privado",
+    "Capacidad de organización política y liderazgo regional"
   ],
-  "procesos": {
+  "controversias": {
     "denuncias_procesadas": 3,
     "acusaciones": [
       "Plagio académico en tesis de maestría y doctorado",
       "Entrega de dinero en campaña electoral (exclusión 2016)",
-      "Caso 'Plata como Cancha'"
+      "Caso \"Plata como Cancha\""
     ],
-    "denuncias_en_proceso": 1,
     "sentencias": [
       {
         "tipo": "Pensión de alimentos",
-        "año": 2024,
+        "anio": 2024,
         "monto_mensual_soles": 30000
       }
+    ],
+    "otros_cuestionamientos": [
+      "Retiro de visa a Estados Unidos en 2022",
+      "Ausentismo prolongado durante su gestión regional",
+      "Críticas por candidatos de su partido con sentencias judiciales"
     ]
   },
-  "controversias_relevantes": [
-    "Exclusión electoral en 2016 por infringir la ley electoral",
-    "Retiro de visa estadounidense en 2022",
-    "Cuestionamientos por ausentismo durante crisis de seguridad en La Libertad"
-  ],
   "perfil_economico": {
     "ingresos_anuales_soles": 9800000,
-    "patrimonio_bienes_soles": 73000000,
+    "patrimonio_aproximado_soles": 73000000,
     "inmuebles": 25,
     "vehiculos": 158
   },
+  "perfil_publico": {
+    "imagen": "Líder político regional con fuerte presencia partidaria",
+    "percepcion": "Valorado por su éxito empresarial y cuestionado por controversias éticas y judiciales"
+  },
   "fuentes": [
     {
-      "titulo": "Perfil biográfico y trayectoria política de César Acuña",
-      "referencia": "PDF César Acuña",
-      "cita": "turn0file0"
+      "titulo": "Perfil político y empresarial de César Acuña",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
     }
   ]
 }
@@ -48,78 +90,100 @@
 , 
 {
   "id": 2,
-  "nombre": "Keiko Fujimori Higuchi",
-  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Keiko_Fujimori_2.jpg/960px-Keiko_Fujimori_2.jpg",
+  "nombre": "Keiko Sofía Fujimori Higuchi",
   "partido": "Fuerza Popular",
-  "intentos_presidenciales": 3,
-  "cargos_principales": [
-    "Primera Dama del Perú (1994-2000)",
-    "Congresista de la República por Lima (2006-2011)",
-    "Líder del partido Fuerza Popular"
+  "intentos_presidenciales": 4,
+  "datos_personales": {
+    "fecha_nacimiento": "1975-05-25",
+    "lugar_nacimiento": "Jesús María, Lima, Perú",
+    "familia": {
+      "padre": "Alberto Fujimori",
+      "madre": "Susana Higuchi",
+      "hermanos": ["Hiro", "Sachi", "Kenji"]
+    },
+    "estado_civil": "Separada",
+    "ex_conyuge": "Mark Vito Villanella",
+    "hijos": ["Kyara", "Kaori"]
+  },
+  "formacion": {
+    "educacion_escolar": "Colegio Sagrados Corazones Recoleta",
+    "pregrado": "Bachiller en Administración de Empresas – Universidad de Boston",
+    "postgrado": [
+      "Maestría en Administración de Empresas (MBA) – Columbia Business School"
+    ]
+  },
+  "trayectoria_politica": {
+    "cargos": [
+      "Primera Dama del Perú (1994-2000)",
+      "Congresista de la República por Lima (2006-2011)",
+      "Fundadora y líder del partido Fuerza Popular"
+    ],
+    "candidaturas_presidenciales": [
+      { "anio": 2011, "resultado": "Perdió en segunda vuelta" },
+      { "anio": 2016, "resultado": "Perdió en segunda vuelta" },
+      { "anio": 2021, "resultado": "Perdió en segunda vuelta" },
+      { "anio": 2026, "resultado": "Intención de postulación anunciada" }
+    ]
+  },
+  "aspectos_positivos": [
+    "Amplia formación académica internacional en administración y gestión",
+    "Capacidad de organización y liderazgo partidario sostenido en el tiempo",
+    "Alta votación histórica como congresista en 2006",
+    "Experiencia política acumulada en campañas nacionales consecutivas",
+    "Reconocida influencia en la agenda política y legislativa del país"
   ],
-  "procesos": {
+  "controversias": {
     "denuncias_procesadas": 2,
     "acusaciones": [
       "Lavado de activos",
       "Crimen organizado",
       "Obstrucción a la justicia"
     ],
-    "denuncias_en_proceso": 1,
     "prision_preventiva": {
       "ocasiones": 3,
       "periodo": "2018-2020"
-    }
-  },
-  "candidaturas_presidenciales": [
-    {
-      "anio": 2011,
-      "resultado": "Segunda vuelta - perdió frente a Ollanta Humala"
     },
-    {
-      "anio": 2016,
-      "resultado": "Segunda vuelta - perdió frente a Pedro Pablo Kuczynski"
-    },
-    {
-      "anio": 2021,
-      "resultado": "Segunda vuelta - perdió frente a Pedro Castillo"
-    }
-  ],
-  "controversias_relevantes": [
-    "Caso Cócteles (financiamiento ilícito de campañas)",
-    "Denuncias de fraude electoral en 2021",
-    "Investigación por financiamiento de estudios en EE.UU."
-  ],
-  "influencia_politica": {
-    "rol": "Figura polarizante",
-    "impacto": "Alta capacidad de movilización política y alto antivoto"
+    "otros_cuestionamientos": [
+      "Caso \"Cócteles\" por presunto financiamiento ilícito de campañas",
+      "Investigación por financiamiento de estudios en el extranjero",
+      "Denuncias de fraude electoral tras las elecciones de 2021",
+      "Alta polarización y rechazo social asociado al legado del fujimorismo"
+    ]
   },
+  "perfil_publico": {
+    "imagen": "Figura política de alto poder e influencia",
+    "percepcion": "Liderazgo sólido para sus simpatizantes y fuerte antivoto para sectores opositores",
+    "rol_politico": "Actor central del sistema político peruano en las últimas dos décadas"
+  },
+  "reconocimientos": [
+    "Considerada la mujer más poderosa del Perú según la Encuesta del Poder (2019)"
+  ],
   "fuentes": [
     {
-      "titulo": "Perfil político y judicial de Keiko Fujimori",
-      "url": "https://www.fuente-politica-ficticia.pe/perfiles/keiko-fujimori"
+      "titulo": "Perfil político y trayectoria de Keiko Fujimori",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
     }
   ]
 }
+
 ,
 
 {
   "id": 3,
   "nombre": "Alfonso López-Chau Nava",
-  "image_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alfonso_L%C3%B3pez-Chau.jpg/250px-Alfonso_L%C3%B3pez-Chau.jpg",
-  "partido": "Independiente / izquierda democrática",
+  "partido": "Independiente",
   "intentos_presidenciales": 1,
-  "origen": {
-    "lugar_nacimiento": "Callao",
+  "datos_personales": {
     "fecha_nacimiento": "1950-07-17",
-    "barrio": "Barrio Obrero Frigorífico"
+    "lugar_nacimiento": "Barrio Obrero Frigorífico, Callao, Perú",
+    "familia": {
+      "padre": "Luis López-Chau Curmendi",
+      "madre": "Yolanda Nava",
+      "hermanos": ["Cristina López-Chau"]
+    }
   },
-  "familia": {
-    "padre": "Luis López-Chau Curmendi",
-    "madre": "Yolanda Nava",
-    "hermanos": ["Cristina López-Chau"]
-  },
-  "educacion_escolar": {
-    "colegio": "Colegio 2 de Mayo del Callao"
+  "formacion": {
+    "educacion_escolar": "Colegio 2 de Mayo del Callao"
   },
   "trayectoria_politica": {
     "militancia_temprana": {
@@ -128,12 +192,26 @@
       "edad_fin": 19,
       "motivo_retiro": "Discrepancias ideológicas"
     },
-    "linea_ideologica": "Izquierda democrática"
+    "linea_ideologica": "Izquierda democrática",
+    "participacion_publica": "Actividad política temprana y discurso orientado a justicia social y defensa democrática"
   },
-  "procesos": {
+  "aspectos_positivos": [
+    "Origen popular y narrativa de esfuerzo personal",
+    "Inicio temprano en la participación política",
+    "Experiencia ideológica diversa que combina formación aprista con izquierda democrática",
+    "Discurso centrado en valores sociales y democráticos"
+  ],
+  "controversias": {
     "denuncias_procesadas": 0,
     "acusaciones": [],
-    "denuncias_en_proceso": 0
+    "cuestionamientos_publicos": [
+      "Trayectoria política limitada a nivel nacional",
+      "Escasa experiencia en cargos públicos de alto nivel"
+    ]
+  },
+  "perfil_publico": {
+    "imagen": "Figura emergente con discurso social",
+    "percepcion": "Valorado por su origen popular y cuestionado por su limitada experiencia política nacional"
   },
   "fuentes": [
     {
@@ -142,6 +220,7 @@
     }
   ]
 }
+
 ,
 {
   "id": 4,

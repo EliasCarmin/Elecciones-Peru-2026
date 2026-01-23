@@ -1,374 +1,561 @@
 [
-{
-  "id": 1,
-  "nombre": "César Acuña Peralta",
-  "partido": "Alianza para el Progreso",
-  "intentos_presidenciales": 3,
-  "datos_personales": {
-    "fecha_nacimiento": "1952-08-10",
-    "lugar_nacimiento": "Ayaqui, Tacabamba, Chota, Cajamarca",
-    "familia": {
-      "padre": "Héctor Acuña Cabrera",
-      "madre": "Clementina Peralta Alvarado",
-      "hermanos": 11,
-      "familiares_en_politica": [
-        "Virgilio Acuña",
-        "Humberto Acuña",
-        "Héctor Acuña",
-        "Mary Acuña",
-        "Richard Acuña"
-      ]
-    }
-  },
-  "formacion": {
-    "pregrado": "Ingeniería Química – Universidad Nacional de Trujillo",
-    "postgrado": [
-      "Maestría en Dirección Universitaria – Universidad de los Andes (Colombia)",
-      "Maestría en Administración de la Educación – Universidad de Lima",
-      "Doctorado en Educación – Universidad Complutense de Madrid",
-      "Posdoctorado en Comunicación, Educación y Cultura – Universidad Santo Tomás (Colombia)"
-    ]
-  },
-  "trayectoria_politica": {
-    "cargos": [
-      "Congresista de la República (2000-2006)",
-      "Alcalde Provincial de Trujillo (2007-2014)",
-      "Gobernador Regional de La Libertad (2015, 2023-2025)",
-      "Fundador y líder de Alianza para el Progreso (APP)"
-    ],
-    "candidaturas_presidenciales": [
-      { "anio": 2016, "resultado": "Excluido" },
-      { "anio": 2021, "resultado": "No pasó a segunda vuelta" },
-      { "anio": 2026, "resultado": "Candidato" }
-    ]
-  },
-  "aspectos_positivos": [
-    "Historia de superación personal desde un origen rural y de bajos recursos",
-    "Fundador de uno de los partidos con mayor presencia territorial en el país",
-    "Amplia experiencia en gestión municipal y regional",
-    "Impulsor de un importante conglomerado educativo privado",
-    "Capacidad de organización política y liderazgo regional"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 3,
-    "acusaciones": [
-      "Plagio académico en tesis de maestría y doctorado",
-      "Entrega de dinero en campaña electoral (exclusión 2016)",
-      "Caso \"Plata como Cancha\""
-    ],
-    "sentencias": [
-      {
-        "tipo": "Pensión de alimentos",
-        "anio": 2024,
-        "monto_mensual_soles": 30000
+  {
+    "id": 1,
+    "nombre": "César Acuña Peralta",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/C%C3%A9sar_Acu%C3%B1a_Peralta.jpg",
+    "partido": "Alianza para el Progreso",
+    "intentos_presidenciales": 3,
+    "datos_personales": {
+      "fecha_nacimiento": "1952-08-10",
+      "lugar_nacimiento": "Ayaqui, Tacabamba, Chota, Cajamarca",
+      "familia": {
+        "padre": "Héctor Acuña Cabrera",
+        "madre": "Clementina Peralta Alvarado",
+        "hermanos": 11,
+        "familiares_en_politica": [
+          "Virgilio Acuña",
+          "Humberto Acuña",
+          "Héctor Acuña",
+          "Mary Acuña",
+          "Richard Acuña"
+        ]
       }
-    ],
-    "otros_cuestionamientos": [
-      "Retiro de visa a Estados Unidos en 2022",
-      "Ausentismo prolongado durante su gestión regional",
-      "Críticas por candidatos de su partido con sentencias judiciales"
-    ]
-  },
-  "perfil_economico": {
-    "ingresos_anuales_soles": 9800000,
-    "patrimonio_aproximado_soles": 73000000,
-    "inmuebles": 25,
-    "vehiculos": 158
-  },
-  "perfil_publico": {
-    "imagen": "Líder político regional con fuerte presencia partidaria",
-    "percepcion": "Valorado por su éxito empresarial y cuestionado por controversias éticas y judiciales"
-  },
-  "fuentes": [
-    {
-      "titulo": "Perfil político y empresarial de César Acuña",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
-    }
-  ]
-}
-
-, 
-{
-  "id": 2,
-  "nombre": "Keiko Sofía Fujimori Higuchi",
-  "partido": "Fuerza Popular",
-  "intentos_presidenciales": 4,
-  "datos_personales": {
-    "fecha_nacimiento": "1975-05-25",
-    "lugar_nacimiento": "Jesús María, Lima, Perú",
-    "familia": {
-      "padre": "Alberto Fujimori",
-      "madre": "Susana Higuchi",
-      "hermanos": ["Hiro", "Sachi", "Kenji"]
     },
-    "estado_civil": "Separada",
-    "ex_conyuge": "Mark Vito Villanella",
-    "hijos": ["Kyara", "Kaori"]
-  },
-  "formacion": {
-    "educacion_escolar": "Colegio Sagrados Corazones Recoleta",
-    "pregrado": "Bachiller en Administración de Empresas – Universidad de Boston",
-    "postgrado": [
-      "Maestría en Administración de Empresas (MBA) – Columbia Business School"
-    ]
-  },
-  "trayectoria_politica": {
-    "cargos": [
-      "Primera Dama del Perú (1994-2000)",
-      "Congresista de la República por Lima (2006-2011)",
-      "Fundadora y líder del partido Fuerza Popular"
-    ],
-    "candidaturas_presidenciales": [
-      { "anio": 2011, "resultado": "Perdió en segunda vuelta" },
-      { "anio": 2016, "resultado": "Perdió en segunda vuelta" },
-      { "anio": 2021, "resultado": "Perdió en segunda vuelta" },
-      { "anio": 2026, "resultado": "Intención de postulación anunciada" }
-    ]
-  },
-  "aspectos_positivos": [
-    "Amplia formación académica internacional en administración y gestión",
-    "Capacidad de organización y liderazgo partidario sostenido en el tiempo",
-    "Alta votación histórica como congresista en 2006",
-    "Experiencia política acumulada en campañas nacionales consecutivas",
-    "Reconocida influencia en la agenda política y legislativa del país"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 2,
-    "acusaciones": [
-      "Lavado de activos",
-      "Crimen organizado",
-      "Obstrucción a la justicia"
-    ],
-    "prision_preventiva": {
-      "ocasiones": 3,
-      "periodo": "2018-2020"
-    },
-    "otros_cuestionamientos": [
-      "Caso \"Cócteles\" por presunto financiamiento ilícito de campañas",
-      "Investigación por financiamiento de estudios en el extranjero",
-      "Denuncias de fraude electoral tras las elecciones de 2021",
-      "Alta polarización y rechazo social asociado al legado del fujimorismo"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Figura política de alto poder e influencia",
-    "percepcion": "Liderazgo sólido para sus simpatizantes y fuerte antivoto para sectores opositores",
-    "rol_politico": "Actor central del sistema político peruano en las últimas dos décadas"
-  },
-  "reconocimientos": [
-    "Considerada la mujer más poderosa del Perú según la Encuesta del Poder (2019)"
-  ],
-  "fuentes": [
-    {
-      "titulo": "Perfil político y trayectoria de Keiko Fujimori",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
-    }
-  ]
-}
-
-,
-
-{
-  "id": 3,
-  "nombre": "Alfonso López-Chau Nava",
-  "partido": "Independiente",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1950-07-17",
-    "lugar_nacimiento": "Barrio Obrero Frigorífico, Callao, Perú",
-    "familia": {
-      "padre": "Luis López-Chau Curmendi",
-      "madre": "Yolanda Nava",
-      "hermanos": ["Cristina López-Chau"]
-    }
-  },
-  "formacion": {
-    "educacion_escolar": "Colegio 2 de Mayo del Callao"
-  },
-  "trayectoria_politica": {
-    "militancia_temprana": {
-      "partido": "Partido Aprista Peruano",
-      "edad_inicio": 15,
-      "edad_fin": 19,
-      "motivo_retiro": "Discrepancias ideológicas"
-    },
-    "linea_ideologica": "Izquierda democrática",
-    "participacion_publica": "Actividad política temprana y discurso orientado a justicia social y defensa democrática"
-  },
-  "aspectos_positivos": [
-    "Origen popular y narrativa de esfuerzo personal",
-    "Inicio temprano en la participación política",
-    "Experiencia ideológica diversa que combina formación aprista con izquierda democrática",
-    "Discurso centrado en valores sociales y democráticos"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      "Trayectoria política limitada a nivel nacional",
-      "Escasa experiencia en cargos públicos de alto nivel"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Figura emergente con discurso social",
-    "percepcion": "Valorado por su origen popular y cuestionado por su limitada experiencia política nacional"
-  },
-  "fuentes": [
-    {
-      "titulo": "Perfil biográfico de Alfonso López-Chau",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
-    }
-  ]
-}
-
-,
-{
-  "id": 4,
-  "nombre": "José Williams Zapata",
-  "partido": "Avanza País",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1951-11-09",
-    "lugar_nacimiento": "Lima, Perú",
-    "estado_civil": "Casado",
-    "conyuge": "Ana Gálvez Ricardo"
-  },
-  "formacion": {
-    "pregrado": "Licenciado en Ciencias Militares – Escuela Militar de Chorrillos",
-    "postgrado": [
-      "Maestría en Desarrollo y Defensa Nacional – CAEN",
-      "Programa de Alto Mando – CAEN"
-    ],
-    "docencia": [
-      "Profesor externo en la Universidad San Ignacio de Loyola (desde 2018)",
-      "Conferencista en la Escuela Superior de Guerra (desde 2020)"
-    ]
-  },
-  "trayectoria": {
-    "militar": {
-      "grado": "General de División del Ejército del Perú (r)",
-      "hechos_destacados": [
-        "Jefe de la Operación Chavín de Huántar (1997)",
-        "Participación en la Guerra del Cenepa (1995)",
-        "Jefe del Comando Conjunto de las Fuerzas Armadas (2006)"
+    "formacion": {
+      "pregrado": "Ingeniería Química – Universidad Nacional de Trujillo",
+      "postgrado": [
+        "Maestría en Dirección Universitaria – Universidad de los Andes (Colombia)",
+        "Maestría en Administración de la Educación – Universidad de Lima",
+        "Doctorado en Educación – Universidad Complutense de Madrid",
+        "Posdoctorado en Comunicación, Educación y Cultura – Universidad Santo Tomás (Colombia)"
       ]
     },
-    "politica": {
+    "trayectoria_politica": {
       "cargos": [
-        "Congresista de la República por Lima (2021-2026)",
-        "Presidente del Congreso (2022-2023)",
-        "Vocero de la bancada Avanza País (2021-2022)"
+        "Congresista de la República (2000-2006)",
+        "Alcalde Provincial de Trujillo (2007-2014)",
+        "Gobernador Regional de La Libertad (2015, 2023-2025)",
+        "Fundador y líder de Alianza para el Progreso (APP)"
+      ],
+      "candidaturas_presidenciales": [
+        {
+          "anio": 2016,
+          "resultado": "Excluido"
+        },
+        {
+          "anio": 2021,
+          "resultado": "No pasó a segunda vuelta"
+        },
+        {
+          "anio": 2026,
+          "resultado": "Candidato"
+        }
+      ]
+    },
+    "aspectos_positivos": [
+      "Historia de superación personal desde un origen rural y de bajos recursos",
+      "Fundador de uno de los partidos con mayor presencia territorial en el país",
+      "Amplia experiencia en gestión municipal y regional",
+      "Impulsor de un importante conglomerado educativo privado",
+      "Capacidad de organización política y liderazgo regional"
+    ],
+    "controversias": {
+      "denuncias_procesadas": 3,
+      "acusaciones": [
+        "Plagio académico en tesis de maestría y doctorado",
+        "Entrega de dinero en campaña electoral (exclusión 2016)",
+        "Caso \"Plata como Cancha\""
+      ],
+      "sentencias": [
+        {
+          "tipo": "Pensión de alimentos",
+          "anio": 2024,
+          "monto_mensual_soles": 30000
+        }
+      ],
+      "otros_cuestionamientos": [
+        "Retiro de visa a Estados Unidos en 2022",
+        "Ausentismo prolongado durante su gestión regional",
+        "Críticas por candidatos de su partido con sentencias judiciales"
+      ]
+    },
+    "perfil_economico": {
+      "ingresos_anuales_soles": 9800000,
+      "patrimonio_aproximado_soles": 73000000,
+      "inmuebles": 25,
+      "vehiculos": 158
+    },
+    "perfil_publico": {
+      "imagen": "Líder político regional con fuerte presencia partidaria",
+      "percepcion": "Valorado por su éxito empresarial y cuestionado por controversias éticas y judiciales"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil político y empresarial de César Acuña",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Keiko Sofía Fujimori Higuchi",
+    "partido": "Fuerza Popular",
+    "intentos_presidenciales": 4,
+    "datos_personales": {
+      "fecha_nacimiento": "1975-05-25",
+      "lugar_nacimiento": "Jesús María, Lima, Perú",
+      "familia": {
+        "padre": "Alberto Fujimori",
+        "madre": "Susana Higuchi",
+        "hermanos": [
+          "Hiro",
+          "Sachi",
+          "Kenji"
+        ]
+      },
+      "estado_civil": "Separada",
+      "ex_conyuge": "Mark Vito Villanella",
+      "hijos": [
+        "Kyara",
+        "Kaori"
+      ]
+    },
+    "formacion": {
+      "educacion_escolar": "Colegio Sagrados Corazones Recoleta",
+      "pregrado": "Bachiller en Administración de Empresas – Universidad de Boston",
+      "postgrado": [
+        "Maestría en Administración de Empresas (MBA) – Columbia Business School"
+      ]
+    },
+    "trayectoria_politica": {
+      "cargos": [
+        "Primera Dama del Perú (1994-2000)",
+        "Congresista de la República por Lima (2006-2011)",
+        "Fundadora y líder del partido Fuerza Popular"
+      ],
+      "candidaturas_presidenciales": [
+        {
+          "anio": 2011,
+          "resultado": "Perdió en segunda vuelta"
+        },
+        {
+          "anio": 2016,
+          "resultado": "Perdió en segunda vuelta"
+        },
+        {
+          "anio": 2021,
+          "resultado": "Perdió en segunda vuelta"
+        },
+        {
+          "anio": 2026,
+          "resultado": "Intención de postulación anunciada"
+        }
+      ]
+    },
+    "aspectos_positivos": [
+      "Amplia formación académica internacional en administración y gestión",
+      "Capacidad de organización y liderazgo partidario sostenido en el tiempo",
+      "Alta votación histórica como congresista en 2006",
+      "Experiencia política acumulada en campañas nacionales consecutivas",
+      "Reconocida influencia en la agenda política y legislativa del país"
+    ],
+    "controversias": {
+      "denuncias_procesadas": 2,
+      "acusaciones": [
+        "Lavado de activos",
+        "Crimen organizado",
+        "Obstrucción a la justicia"
+      ],
+      "prision_preventiva": {
+        "ocasiones": 3,
+        "periodo": "2018-2020"
+      },
+      "otros_cuestionamientos": [
+        "Caso \"Cócteles\" por presunto financiamiento ilícito de campañas",
+        "Investigación por financiamiento de estudios en el extranjero",
+        "Denuncias de fraude electoral tras las elecciones de 2021",
+        "Alta polarización y rechazo social asociado al legado del fujimorismo"
+      ]
+    },
+    "perfil_publico": {
+      "imagen": "Figura política de alto poder e influencia",
+      "percepcion": "Liderazgo sólido para sus simpatizantes y fuerte antivoto para sectores opositores",
+      "rol_politico": "Actor central del sistema político peruano en las últimas dos décadas"
+    },
+    "reconocimientos": [
+      "Considerada la mujer más poderosa del Perú según la Encuesta del Poder (2019)"
+    ],
+    "fuentes": [
+      {
+        "titulo": "Perfil político y trayectoria de Keiko Fujimori",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Alfonso López-Chau Nava",
+    "partido": "Independiente",
+    "intentos_presidenciales": 1,
+    "datos_personales": {
+      "fecha_nacimiento": "1950-07-17",
+      "lugar_nacimiento": "Barrio Obrero Frigorífico, Callao, Perú",
+      "familia": {
+        "padre": "Luis López-Chau Curmendi",
+        "madre": "Yolanda Nava",
+        "hermanos": [
+          "Cristina López-Chau"
+        ]
+      }
+    },
+    "formacion": {
+      "educacion_escolar": "Colegio 2 de Mayo del Callao"
+    },
+    "trayectoria_politica": {
+      "militancia_temprana": {
+        "partido": "Partido Aprista Peruano",
+        "edad_inicio": 15,
+        "edad_fin": 19,
+        "motivo_retiro": "Discrepancias ideológicas"
+      },
+      "linea_ideologica": "Izquierda democrática",
+      "participacion_publica": "Actividad política temprana y discurso orientado a justicia social y defensa democrática"
+    },
+    "aspectos_positivos": [
+      "Origen popular y narrativa de esfuerzo personal",
+      "Inicio temprano en la participación política",
+      "Experiencia ideológica diversa que combina formación aprista con izquierda democrática",
+      "Discurso centrado en valores sociales y democráticos"
+    ],
+    "controversias": {
+      "denuncias_procesadas": 0,
+      "acusaciones": [],
+      "cuestionamientos_publicos": [
+        "Trayectoria política limitada a nivel nacional",
+        "Escasa experiencia en cargos públicos de alto nivel"
+      ]
+    },
+    "perfil_publico": {
+      "imagen": "Figura emergente con discurso social",
+      "percepcion": "Valorado por su origen popular y cuestionado por su limitada experiencia política nacional"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil biográfico de Alfonso López-Chau",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "José Williams Zapata",
+    "partido": "Avanza País",
+    "intentos_presidenciales": 1,
+    "datos_personales": {
+      "fecha_nacimiento": "1951-11-09",
+      "lugar_nacimiento": "Lima, Perú",
+      "estado_civil": "Casado",
+      "conyuge": "Ana Gálvez Ricardo"
+    },
+    "formacion": {
+      "pregrado": "Licenciado en Ciencias Militares – Escuela Militar de Chorrillos",
+      "postgrado": [
+        "Maestría en Desarrollo y Defensa Nacional – CAEN",
+        "Programa de Alto Mando – CAEN"
+      ],
+      "docencia": [
+        "Profesor externo en la Universidad San Ignacio de Loyola (desde 2018)",
+        "Conferencista en la Escuela Superior de Guerra (desde 2020)"
+      ]
+    },
+    "trayectoria": {
+      "militar": {
+        "grado": "General de División del Ejército del Perú (r)",
+        "hechos_destacados": [
+          "Jefe de la Operación Chavín de Huántar (1997)",
+          "Participación en la Guerra del Cenepa (1995)",
+          "Jefe del Comando Conjunto de las Fuerzas Armadas (2006)"
+        ]
+      },
+      "politica": {
+        "cargos": [
+          "Congresista de la República por Lima (2021-2026)",
+          "Presidente del Congreso (2022-2023)",
+          "Vocero de la bancada Avanza País (2021-2022)"
+        ],
+        "candidatura_2026": {
+          "cargo": "Presidente de la República",
+          "partido": "Avanza País",
+          "plancha": [
+            "Luis Flores Reátegui (Vicepresidente 1)",
+            "Karina Costa Reátegui (Vicepresidenta 2)"
+          ]
+        }
+      }
+    },
+    "aspectos_positivos": [
+      "Reconocido como héroe militar por liderar la exitosa Operación Chavín de Huántar",
+      "Amplia experiencia en defensa y seguridad nacional",
+      "Prestigio y respaldo en sectores militares y conservadores",
+      "Rol clave en la conducción del Congreso durante una etapa de alta inestabilidad política",
+      "Experiencia académica como docente y conferencista en temas estratégicos"
+    ],
+    "controversias": {
+      "denuncias_procesadas": 1,
+      "acusaciones": [
+        "Presunto encubrimiento en el caso Accomarca (1985)",
+        "Blindaje político a congresistas conocidos como 'Los Niños'",
+        "Incremento del gasto en alimentación del Congreso durante su presidencia"
+      ],
+      "situacion_judicial": {
+        "caso_accomarca": {
+          "resultado": "Absuelto penalmente por falta de pruebas directas",
+          "observaciones": "Se mantuvo cuestionamiento ético y político según la CVR"
+        }
+      },
+      "otros_cuestionamientos": [
+        "Demanda contra la Comisión de la Verdad y Reconciliación",
+        "Tacha contra su candidatura 2026 por presunta omisión de ingresos en Hoja de Vida"
+      ]
+    },
+    "perfil_publico": {
+      "imagen": "Figura asociada al orden, disciplina y seguridad",
+      "percepcion": "Valorado por su trayectoria militar, pero cuestionado por decisiones políticas y éticas"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil político y militar de José Williams Zapata",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/jose-williams"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Álvaro Paz de la Barra",
+    "partido": "Fe en el Perú",
+    "intentos_presidenciales": 1,
+    "datos_personales": {
+      "fecha_nacimiento": "1983-07-26",
+      "lugar_nacimiento": "Miraflores, Lima, Perú",
+      "padre": "Vladimir Paz de la Barra",
+      "madre": "Jesús Fanny Freigeiro Morán",
+      "estado_civil": "Casado",
+      "conyuge": "Sofía Franco"
+    },
+    "formacion": {
+      "pregrado": "Abogado – Universidad de San Martín de Porres (USMP)",
+      "postgrado": [
+        "Maestría en Gestión Pública – EUCIM Business School (España)",
+        "Postgrado en Derecho Constitucional y Derechos Humanos – UNMSM",
+        "Postgrado en Gobierno y Gestión Pública – USMP"
+      ]
+    },
+    "trayectoria_politica": {
+      "cargos": [
+        "Alcalde del distrito de La Molina (2019-2022)",
+        "Presidente de la Asociación de Municipalidades del Perú – AMPE (2019-2022)",
+        "Presidente fundador del partido político Fe en el Perú"
       ],
       "candidatura_2026": {
         "cargo": "Presidente de la República",
-        "partido": "Avanza País",
-        "plancha": [
-          "Luis Flores Reátegui (Vicepresidente 1)",
-          "Karina Costa Reátegui (Vicepresidenta 2)"
+        "enfoque_discurso": [
+          "Lucha contra la corrupción",
+          "Seguridad ciudadana",
+          "Crítica al gobierno interino"
         ]
       }
-    }
-  },
-  "aspectos_positivos": [
-    "Reconocido como héroe militar por liderar la exitosa Operación Chavín de Huántar",
-    "Amplia experiencia en defensa y seguridad nacional",
-    "Prestigio y respaldo en sectores militares y conservadores",
-    "Rol clave en la conducción del Congreso durante una etapa de alta inestabilidad política",
-    "Experiencia académica como docente y conferencista en temas estratégicos"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 1,
-    "acusaciones": [
-      "Presunto encubrimiento en el caso Accomarca (1985)",
-      "Blindaje político a congresistas conocidos como 'Los Niños'",
-      "Incremento del gasto en alimentación del Congreso durante su presidencia"
+    },
+    "aspectos_positivos": [
+      "Experiencia en gestión municipal y liderazgo de gobiernos locales",
+      "Presidencia de la AMPE le permitió construir una red política nacional",
+      "Formación académica sólida en derecho y gestión pública",
+      "Discurso enfocado en anticorrupción y fortalecimiento del orden institucional",
+      "Alta capacidad de comunicación y visibilidad mediática"
     ],
-    "situacion_judicial": {
-      "caso_accomarca": {
-        "resultado": "Absuelto penalmente por falta de pruebas directas",
-        "observaciones": "Se mantuvo cuestionamiento ético y político según la CVR"
+    "controversias": {
+      "denuncias_procesadas": 0,
+      "acusaciones": [],
+      "cuestionamientos_publicos": [
+        "Exposición mediática de conflictos familiares",
+        "Enfrentamientos verbales con autoridades del gobierno interino",
+        "Críticas por politizar denuncias sin resoluciones judiciales firmes"
+      ]
+    },
+    "perfil_publico": {
+      "imagen": "Figura mediática con perfil municipalista",
+      "percepcion": "Valorado por su liderazgo local y criticado por su alta exposición personal",
+      "base_politica": "Autoridades municipales y electores urbanos"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Roberto Sánchez Palomino",
+    "image_url": "https://www.euroamerica.org/wp-content/uploads/2022/07/Roberto-Sanchez.jpg",
+    "partido": "Juntos por el Perú",
+    "intentos_presidenciales": 1,
+    "datos_personales": {
+      "fecha_nacimiento": "1969-02-03",
+      "lugar_nacimiento": "Huaral, Lima, Perú",
+      "profesion": "Psicólogo"
+    },
+    "formacion": {
+      "pregrado": "Psicología – Universidad Nacional Mayor de San Marcos (UNMSM)",
+      "anio_titulacion": 2000
+    },
+    "trayectoria_politica": {
+      "militancia_inicial": {
+        "partido": "Partido Humanista Peruano",
+        "referente": "Yehude Simon"
+      },
+      "cargos": [
+        "Congresista de la República (2021-2026)",
+        "Ministro de Comercio Exterior y Turismo (Gobierno de Pedro Castillo)",
+        "Gerente de Desarrollo Social – Municipalidad Provincial de Huaral (2020)"
+      ],
+      "liderazgo_partidario": {
+        "partido": "Juntos por el Perú",
+        "rol": "Presidente",
+        "desde": 2017,
+        "fundador_desde": 2008
+      },
+      "candidatura_2026": {
+        "cargo": "Presidente de la República",
+        "partido": "Juntos por el Perú",
+        "incidencias": "Denuncia fallas técnicas del sistema del JNE durante la inscripción"
       }
     },
-    "otros_cuestionamientos": [
-      "Demanda contra la Comisión de la Verdad y Reconciliación",
-      "Tacha contra su candidatura 2026 por presunta omisión de ingresos en Hoja de Vida"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Figura asociada al orden, disciplina y seguridad",
-    "percepcion": "Valorado por su trayectoria militar, pero cuestionado por decisiones políticas y éticas"
-  },
-  "fuentes": [
-    {
-      "titulo": "Perfil político y militar de José Williams Zapata",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/jose-williams"
-    }
-  ]
-}
-,
-{
-  "id": 5,
-  "nombre": "Álvaro Paz de la Barra",
-  "partido": "Fe en el Perú",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1983-07-26",
-    "lugar_nacimiento": "Miraflores, Lima, Perú",
-    "padre": "Vladimir Paz de la Barra",
-    "madre": "Jesús Fanny Freigeiro Morán",
-    "estado_civil": "Casado",
-    "conyuge": "Sofía Franco"
-  },
-  "formacion": {
-    "pregrado": "Abogado – Universidad de San Martín de Porres (USMP)",
-    "postgrado": [
-      "Maestría en Gestión Pública – EUCIM Business School (España)",
-      "Postgrado en Derecho Constitucional y Derechos Humanos – UNMSM",
-      "Postgrado en Gobierno y Gestión Pública – USMP"
-    ]
-  },
-  "trayectoria_politica": {
-    "cargos": [
-      "Alcalde del distrito de La Molina (2019-2022)",
-      "Presidente de la Asociación de Municipalidades del Perú – AMPE (2019-2022)",
-      "Presidente fundador del partido político Fe en el Perú"
+    "aspectos_positivos": [
+      "Formación profesional en psicología con enfoque social",
+      "Experiencia ministerial en el Poder Ejecutivo",
+      "Liderazgo sostenido de una organización política de izquierda progresista",
+      "Vinculación con movimientos sociales, campesinos y magisteriales",
+      "Discurso orientado a la democratización económica y justicia social"
     ],
-    "candidatura_2026": {
-      "cargo": "Presidente de la República",
-      "enfoque_discurso": [
-        "Lucha contra la corrupción",
-        "Seguridad ciudadana",
-        "Crítica al gobierno interino"
+    "controversias": {
+      "denuncias_procesadas": 0,
+      "acusaciones": [],
+      "cuestionamientos_publicos": [
+        "Defensa política del gobierno de Pedro Castillo pese a su crisis institucional",
+        "Cuestionado por alineamiento con un gobierno altamente impopular",
+        "Conflictos con el sistema electoral por denuncias de colapso del JNE"
       ]
-    }
-  },
-  "aspectos_positivos": [
-    "Experiencia en gestión municipal y liderazgo de gobiernos locales",
-    "Presidencia de la AMPE le permitió construir una red política nacional",
-    "Formación académica sólida en derecho y gestión pública",
-    "Discurso enfocado en anticorrupción y fortalecimiento del orden institucional",
-    "Alta capacidad de comunicación y visibilidad mediática"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      "Exposición mediática de conflictos familiares",
-      "Enfrentamientos verbales con autoridades del gobierno interino",
-      "Críticas por politizar denuncias sin resoluciones judiciales firmes"
+    },
+    "perfil_publico": {
+      "imagen": "Dirigente de izquierda con perfil social",
+      "percepcion": "Valorado por sectores progresistas y cuestionado por su cercanía al gobierno de Pedro Castillo",
+      "base_politica": "Movimientos sociales, campesinos y electores de izquierda"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil político y trayectoria de Roberto Sánchez",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/roberto-sanchez"
+      }
     ]
   },
-  "perfil_publico": {
-    "imagen": "Figura mediática con perfil municipalista",
-    "percepcion": "Valorado por su liderazgo local y criticado por su alta exposición personal",
-    "base_politica": "Autoridades municipales y electores urbanos"
-  },
-  "fuentes": [
-    {
-      "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
-    }
-  ]
-}
-
+  {
+    "id": 7,
+    "nombre": "Fiorella Molinelli Aristondo",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYSJIIlB-cc9KiqpVKtxe36qdwzEc2XcDCQ&s",
+    "partido": "Fuerza Moderna",
+    "intentos_presidenciales": 1,
+    "datos_personales": {
+      "fecha_nacimiento": "1974-03-20",
+      "lugar_nacimiento": "Lima, Perú",
+      "familia": {
+        "padre": "Ángel Molinelli Valle",
+        "madre": "Flor de María Aristondo Espinoza"
+      }
+    },
+    "formacion": {
+      "educacion_escolar": "Colegio San Antonio de Mujeres del Callao",
+      "pregrado": "Licenciatura en Economía – Pontificia Universidad Católica del Perú (PUCP)",
+      "postgrados": [
+        "Maestría en Economía y Políticas Públicas – Universidad Torcuato Di Tella (Argentina)",
+        "Maestría en Dirección y Gestión de la Salud – Universidad de Alcalá (España)",
+        "Doctorado en Gobierno y Políticas Públicas – Universidad de San Martín de Porres"
+      ]
+    },
+    "trayectoria_publica": {
+      "gestion_publica": [
+        {
+          "cargo": "Presidenta Ejecutiva de EsSalud",
+          "periodo": "2018-2021",
+          "descripcion": "Lideró EsSalud durante la pandemia de COVID-19, con alta exposición mediática y gestión en contexto de emergencia"
+        },
+        {
+          "cargo": "Ministra de Desarrollo e Inclusión Social (MIDIS)",
+          "periodo": "2017-2018",
+          "gobierno": "Pedro Pablo Kuczynski"
+        },
+        {
+          "cargo": "Viceministra de Construcción y Saneamiento",
+          "periodo": "2017"
+        },
+        {
+          "cargo": "Viceministra de Transportes",
+          "periodo": "2016-2017"
+        }
+      ],
+      "asesorias": [
+        "Osinergmin (2006-2013)",
+        "Congreso de la República (2013, 2016)",
+        "Ministerio de Economía y Finanzas (2014)"
+      ]
+    },
+    "propuestas": {
+      "enfoque_principal": "Seguridad ciudadana y eficiencia del Estado",
+      "medidas_destacadas": [
+        "Replicar el modelo de seguridad de Nayib Bukele",
+        "Construcción de cárceles de máxima seguridad alejadas de zonas urbanas",
+        "Bloqueo total de señales en centros penitenciarios"
+      ]
+    },
+    "aspectos_positivos": [
+      "Alta formación académica con estudios de posgrado y doctorado",
+      "Amplia experiencia técnica en el sector público",
+      "Gestión en contextos de crisis sanitaria durante la pandemia",
+      "Capacidad de organización política propia al inscribir su partido",
+      "Discurso orientado a eficiencia, orden y seguridad ciudadana"
+    ],
+    "controversias": {
+      "denuncias_procesadas": 0,
+      "acusaciones_en_investigacion": [
+        {
+          "caso": "Club de las Farmacéuticas",
+          "descripcion": "Investigada por presunto liderazgo de una organización criminal en EsSalud por compras irregulares durante la pandemia",
+          "monto_involucrado": "Más de S/18 millones",
+          "estado": "Investigación fiscal"
+        },
+        {
+          "caso": "Chinchero",
+          "descripcion": "Firma de adenda cuestionada para el Aeropuerto de Chinchero",
+          "delito_imputado": "Colusión agravada",
+          "pena_solicitada": "6 años de prisión",
+          "estado": "Proceso penal en curso"
+        }
+      ],
+      "cuestionamientos_publicos": [
+        "Allanamiento de vivienda y oficinas en 2021",
+        "Declaraciones imprecisas sobre el costo de la megacárcel de El Salvador",
+        "Imagen pública polarizada tras su paso por EsSalud"
+      ]
+    },
+    "perfil_publico": {
+      "imagen": "Gestora técnica con discurso de mano dura",
+      "percepcion": "Valorada por su preparación y capacidad técnica, cuestionada por investigaciones fiscales",
+      "posicionamiento": "Orden, seguridad y eficiencia del Estado"
+    },
+    "fuentes": [
+      {
+        "titulo": "Perfil político de Fiorella Molinelli",
+        "url": "https://www.perfil-politico-ficticio.pe/candidatos/fiorella-molinelli"
+      }
+    ]
+  }
 ]

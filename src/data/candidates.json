@@ -139,7 +139,7 @@
     {
         "id": 4,
         "nombre": "José Williams Zapata",
-        "image_url": "https://www.flickr.com/photos/ministeriodedefensaperu/52456688270/in/album-72177720303209308/",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Jos%C3%A9_Williams%2C_octubre_de_2022_1_%28cropped%29.jpg",
         "partido": "Avanza País",
         "intentos_presidenciales": 1,
         "cargos_principales": [
@@ -178,7 +178,7 @@
     {
         "id": 5,
         "nombre": "Álvaro Paz de la Barra",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81lvaro_Paz_de_la_Barra.jpg/250px-%C3%81lvaro_Paz_de_la_Barra.jpg",
+        "image_url": "https://caretas.pe/wp-content/uploads/2025/11/image-316-585x390.png",
         "partido": "Fe en el Perú",
         "intentos_presidenciales": 1,
         "cargos_principales": [
@@ -207,6 +207,80 @@
             {
                 "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Roberto Sánchez Palomino",
+        "image_url": "https://www.euroamerica.org/wp-content/uploads/2022/07/Roberto-Sanchez.jpg",
+        "partido": "Juntos por el Perú",
+        "intentos_presidenciales": 1,
+        "cargos_principales": [
+            "Congresista de la República (2021-2026)",
+            "Ministro de Comercio Exterior y Turismo (Gobierno de Pedro Castillo)",
+            "Gerente de Desarrollo Social – Municipalidad Provincial de Huaral (2020)"
+        ],
+        "procesos": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "denuncias_en_proceso": 0
+        },
+        "controversias_relevantes": [
+            "Defensa política del gobierno de Pedro Castillo pese a su crisis institucional",
+            "Cuestionado por alineamiento con un gobierno altamente impopular",
+            "Conflictos con el sistema electoral por denuncias de colapso del JNE"
+        ],
+        "aspectos_positivos": [
+            "Formación profesional en psicología con enfoque social",
+            "Experiencia ministerial en el Poder Ejecutivo",
+            "Liderazgo sostenido de una organización política de izquierda progresista",
+            "Vinculación con movimientos sociales, campesinos y magisteriales",
+            "Discurso orientado a la democratización económica y justicia social"
+        ],
+        "fuentes": [
+            {
+                "titulo": "Perfil político y trayectoria de Roberto Sánchez",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/roberto-sanchez"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Fiorella Molinelli Aristondo",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYSJIIlB-cc9KiqpVKtxe36qdwzEc2XcDCQ&s",
+        "partido": "Fuerza Moderna",
+        "intentos_presidenciales": 1,
+        "cargos_principales": [
+            "Presidenta Ejecutiva de EsSalud (2018-2021)",
+            "Ministra de Desarrollo e Inclusión Social (MIDIS) (2017-2018)",
+            "Viceministra de Construcción y Saneamiento (2017)",
+            "Viceministra de Transportes (2016-2017)"
+        ],
+        "procesos": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [
+                "Club de las Farmacéuticas: Investigada por presunto liderazgo de una organización criminal en EsSalud por compras irregulares durante la pandemia",
+                "Chinchero: Firma de adenda cuestionada para el Aeropuerto de Chinchero"
+            ],
+            "denuncias_en_proceso": 2
+        },
+        "controversias_relevantes": [
+            "Allanamiento de vivienda y oficinas en 2021",
+            "Declaraciones imprecisas sobre el costo de la megacárcel de El Salvador",
+            "Imagen pública polarizada tras su paso por EsSalud"
+        ],
+        "aspectos_positivos": [
+            "Alta formación académica con estudios de posgrado y doctorado",
+            "Amplia experiencia técnica en el sector público",
+            "Gestión en contextos de crisis sanitaria durante la pandemia",
+            "Capacidad de organización política propia al inscribir su partido",
+            "Discurso orientado a eficiencia, orden y seguridad ciudadana"
+        ],
+        "fuentes": [
+            {
+                "titulo": "Perfil político de Fiorella Molinelli",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/fiorella-molinelli"
             }
         ]
     }

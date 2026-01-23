@@ -31,6 +31,13 @@
             "Retiro de visa estadounidense en 2022",
             "Cuestionamientos por ausentismo durante crisis de seguridad en La Libertad"
         ],
+        "aspectos_positivos": [
+            "Historia de superación personal desde un origen rural y de bajos recursos",
+            "Fundador de uno de los partidos con mayor presencia territorial en el país",
+            "Amplia experiencia en gestión municipal y regional",
+            "Impulsor de un importante conglomerado educativo privado",
+            "Capacidad de organización política y liderazgo regional"
+        ],
         "perfil_economico": {
             "ingresos_anuales_soles": 9800000,
             "patrimonio_bienes_soles": 73000000,
@@ -40,8 +47,7 @@
         "fuentes": [
             {
                 "titulo": "Perfil biográfico y trayectoria política de César Acuña",
-                "referencia": "PDF César Acuña",
-                "cita": "turn0file0"
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
             }
         ]
     },
@@ -50,7 +56,7 @@
         "nombre": "Keiko Fujimori Higuchi",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Keiko_Fujimori_2.jpg/960px-Keiko_Fujimori_2.jpg",
         "partido": "Fuerza Popular",
-        "intentos_presidenciales": 3,
+        "intentos_presidenciales": 4,
         "cargos_principales": [
             "Primera Dama del Perú (1994-2000)",
             "Congresista de la República por Lima (2006-2011)",
@@ -88,14 +94,17 @@
             "Denuncias de fraude electoral en 2021",
             "Investigación por financiamiento de estudios en EE.UU."
         ],
-        "influencia_politica": {
-            "rol": "Figura polarizante",
-            "impacto": "Alta capacidad de movilización política y alto antivoto"
-        },
+        "aspectos_positivos": [
+            "Amplia formación académica internacional en administración y gestión",
+            "Capacidad de organización y liderazgo partidario sostenido en el tiempo",
+            "Alta votación histórica como congresista en 2006",
+            "Experiencia política acumulada en campañas nacionales consecutivas",
+            "Reconocida influencia en la agenda política y legislativa del país"
+        ],
         "fuentes": [
             {
-                "titulo": "Perfil político y judicial de Keiko Fujimori",
-                "url": "https://www.fuente-politica-ficticia.pe/perfiles/keiko-fujimori"
+                "titulo": "Perfil político y trayectoria de Keiko Fujimori",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
             }
         ]
     },
@@ -103,41 +112,101 @@
         "id": 3,
         "nombre": "Alfonso López-Chau Nava",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alfonso_L%C3%B3pez-Chau.jpg/250px-Alfonso_L%C3%B3pez-Chau.jpg",
-        "partido": "Independiente / izquierda democrática",
+        "partido": "Independiente",
         "intentos_presidenciales": 1,
-        "origen": {
-            "lugar_nacimiento": "Callao",
-            "fecha_nacimiento": "1950-07-17",
-            "barrio": "Barrio Obrero Frigorífico"
-        },
-        "familia": {
-            "padre": "Luis López-Chau Curmendi",
-            "madre": "Yolanda Nava",
-            "hermanos": [
-                "Cristina López-Chau"
-            ]
-        },
-        "educacion_escolar": {
-            "colegio": "Colegio 2 de Mayo del Callao"
-        },
-        "trayectoria_politica": {
-            "militancia_temprana": {
-                "partido": "Partido Aprista Peruano",
-                "edad_inicio": 15,
-                "edad_fin": 19,
-                "motivo_retiro": "Discrepancias ideológicas"
-            },
-            "linea_ideologica": "Izquierda democrática"
-        },
+        "cargos_principales": [
+            "Rector de la Universidad Nacional de Ingeniería (UNI)",
+            "Participación en actividad política temprana"
+        ],
         "procesos": {
             "denuncias_procesadas": 0,
             "acusaciones": [],
             "denuncias_en_proceso": 0
         },
+        "aspectos_positivos": [
+            "Origen popular y narrativa de esfuerzo personal",
+            "Inicio temprano en la participación política",
+            "Experiencia ideológica diversa que combina formación aprista con izquierda democrática",
+            "Discurso centrado en valores sociales y democráticos"
+        ],
         "fuentes": [
             {
                 "titulo": "Perfil biográfico de Alfonso López-Chau",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "José Williams Zapata",
+        "image_url": "https://www.flickr.com/photos/ministeriodedefensaperu/52456688270/in/album-72177720303209308/",
+        "partido": "Avanza País",
+        "intentos_presidenciales": 1,
+        "cargos_principales": [
+            "Congresista de la República (2021-2026)",
+            "Presidente del Congreso (2022-2023)",
+            "General de División del Ejército del Perú (r)"
+        ],
+        "procesos": {
+            "denuncias_procesadas": 1,
+            "acusaciones": [
+                "Presunto encubrimiento en el caso Accomarca (1985)",
+                "Blindaje político a congresistas conocidos como 'Los Niños'",
+                "Incremento del gasto en alimentación del Congreso"
+            ],
+            "denuncias_en_proceso": 0
+        },
+        "controversias_relevantes": [
+            "Caso Accomarca (Absuelto penalmente, cuestionamiento ético)",
+            "Demanda contra la Comisión de la Verdad y Reconciliación",
+            "Tacha contra su candidatura 2026 por omisión de ingresos"
+        ],
+        "aspectos_positivos": [
+            "Reconocido como héroe militar por liderar la exitosa Operación Chavín de Huántar",
+            "Amplia experiencia en defensa y seguridad nacional",
+            "Prestigio y respaldo en sectores militares y conservadores",
+            "Rol clave en la conducción del Congreso durante una etapa de alta inestabilidad política",
+            "Experiencia académica como docente y conferencista en temas estratégicos"
+        ],
+        "fuentes": [
+            {
+                "titulo": "Perfil político y militar de José Williams Zapata",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/jose-williams"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Álvaro Paz de la Barra",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81lvaro_Paz_de_la_Barra.jpg/250px-%C3%81lvaro_Paz_de_la_Barra.jpg",
+        "partido": "Fe en el Perú",
+        "intentos_presidenciales": 1,
+        "cargos_principales": [
+            "Alcalde de La Molina (2019-2022)",
+            "Presidente de la Asociación de Municipalidades del Perú - AMPE (2019-2022)",
+            "Presidente fundador del partido Fe en el Perú"
+        ],
+        "procesos": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "denuncias_en_proceso": 0
+        },
+        "controversias_relevantes": [
+            "Exposición mediática de conflictos familiares",
+            "Enfrentamientos verbales con autoridades del gobierno",
+            "Críticas por politizar denuncias sin resoluciones judiciales"
+        ],
+        "aspectos_positivos": [
+            "Experiencia en gestión municipal y liderazgo de gobiernos locales",
+            "Presidencia de la AMPE le permitió construir una red política nacional",
+            "Formación académica sólida en derecho y gestión pública",
+            "Discurso enfocado en anticorrupción y fortalecimiento del orden institucional",
+            "Alta capacidad de comunicación y visibilidad mediática"
+        ],
+        "fuentes": [
+            {
+                "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
             }
         ]
     }

@@ -41,10 +41,29 @@ const Footer = () => {
                         <p className="text-sm text-gray-400">
                             © 2026 Elecciones Perú. Información con fines educativos.
                         </p>
-                        <div className="flex items-center gap-2">
-                            <div className="w-8 h-6 bg-peru-red"></div>
-                            <div className="w-8 h-6 bg-white"></div>
-                            <span className="text-sm text-gray-400 ml-2">Hecho con 🇵🇪 para el Perú</span>
+                        <div className="flex flex-col md:flex-row gap-8 items-start md:items-center text-xs text-gray-500 border-l-2 border-peru-red/30 pl-6">
+                            <div>
+                                <p className="font-bold text-gray-400 mb-1">Elías Jesús Carmín Leandro</p>
+                                <p>eliasjesuscarmin@gmail.com</p>
+                                <a href="https://www.linkedin.com/in/elias-carmin/" target="_blank" rel="noopener noreferrer" className="hover:text-peru-red transition-colors">LinkedIn</a>
+                                <p>Analista de datos, desarrollador Python</p>
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-400 mb-1">Brandon Jair D'Angelo Malpartida</p>
+                                <p>jairdangelo67@gmail.com</p>
+                                <p>Periodista</p>
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-400 mb-1">Edgar Gabriel Laureano Damian</p>
+                                <p>edgar.g.laureano@gmail.com</p>
+                                <p>Desarrollador de Software</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-0">
+                            <div className="w-4 h-6 bg-peru-red"></div>
+                            <div className="w-4 h-6 bg-white"></div>
+                            <div className="w-4 h-6 bg-peru-red"></div>
+                            <span className="text-sm text-gray-400 ml-2">Hecho por y para el Perú</span>
                         </div>
                     </div>
                 </div>

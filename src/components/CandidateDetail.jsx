@@ -1,9 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { useState } from 'react';
 
 const CandidateDetail = ({ candidate, onClose }) => {
     const [imageError, setImageError] = useState(false);
+    const [activeTab, setActiveTab] = useState('negative');
 
     if (!candidate) return null;
 
@@ -75,171 +76,256 @@ const CandidateDetail = ({ candidate, onClose }) => {
 
                     {/* Content */}
                     <div className="p-6 md:p-8 lg:p-10 space-y-8">
-                        {/* Basic Info */}
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-gray-50 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">📊</span>
-                                    Información General
-                                </h3>
-                                <div className="space-y-3">
-                                    <div>
-                                        <p className="text-sm text-gray-600">Intentos Presidenciales</p>
-                                        <p className="text-lg font-semibold text-peru-red">{candidate.intentos_presidenciales || 0}</p>
-                                    </div>
-                                    {candidate.origen && (
-                                        <>
-                                            <div>
-                                                <p className="text-sm text-gray-600">Lugar de Nacimiento</p>
-                                                <p className="text-lg font-semibold">{candidate.origen.lugar_nacimiento}</p>
-                                            </div>
-                                            {candidate.origen.barrio && (
-                                                <div>
-                                                    <p className="text-sm text-gray-600">Barrio</p>
-                                                    <p className="text-lg font-semibold">{candidate.origen.barrio}</p>
-                                                </div>
-                                            )}
-                                        </>
-                                    )}
-                                </div>
-                            </div>
-
-                            <div className="bg-gray-50 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">📋</span>
-                                    Cargos Principales
-                                </h3>
-                                <ul className="space-y-2">
-                                    {candidate.cargos_principales && candidate.cargos_principales.length > 0 ? (
-                                        candidate.cargos_principales.map((cargo, index) => (
-                                            <li key={index} className="flex items-start gap-2">
-                                                <span className="text-peru-red mt-1">•</span>
-                                                <span className="text-sm text-gray-700">{cargo}</span>
-                                            </li>
-                                        ))
-                                    ) : (
-                                        <li className="text-sm text-gray-500 italic">No se registran cargos principales</li>
-                                    )}
-                                </ul>
-                            </div>
+                        {/* Tabs Navigation */}
+                        <div className="flex border-b border-gray-200 mb-6">
+                            <button
+                                onClick={() => setActiveTab('negative')}
+                                className={`px-6 py-3 font-bold text-lg transition-all border-b-2 ${activeTab === 'negative'
+                                    ? 'border-peru-red text-peru-red'
+                                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                                    }`}
+                            >
+                                ⚖️ Trayectoria y Controversias
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('positive')}
+                                className={`px-6 py-3 font-bold text-lg transition-all border-b-2 ${activeTab === 'positive'
+                                    ? 'border-green-600 text-green-600'
+                                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                                    }`}
+                            >
+                                ✨ Aspectos Positivos
+                            </button>
                         </div>
 
-                        {/* Procesos Legales */}
-                        {candidate.procesos && (
-                            <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">⚖️</span>
-                                    Procesos Legales
-                                </h3>
-                                <div className="grid md:grid-cols-3 gap-4 mb-6">
-                                    <div className="bg-white rounded-lg p-4 text-center">
-                                        <p className="text-3xl font-bold text-peru-red">
-                                            {candidate.procesos.denuncias_procesadas || 0}
-                                        </p>
-                                        <p className="text-sm text-gray-600 mt-1">Denuncias Procesadas</p>
-                                    </div>
-                                    <div className="bg-white rounded-lg p-4 text-center">
-                                        <p className="text-3xl font-bold text-peru-red">
-                                            {candidate.procesos.denuncias_en_proceso || 0}
-                                        </p>
-                                        <p className="text-sm text-gray-600 mt-1">En Proceso</p>
-                                    </div>
-                                    <div className="bg-white rounded-lg p-4 text-center">
-                                        <p className="text-3xl font-bold text-peru-red">
-                                            {candidate.procesos.acusaciones?.length || 0}
-                                        </p>
-                                        <p className="text-sm text-gray-600 mt-1">Acusaciones</p>
-                                    </div>
-                                </div>
-                                {candidate.procesos.acusaciones && candidate.procesos.acusaciones.length > 0 && (
-                                    <div>
-                                        <p className="font-semibold text-gray-900 mb-3">Acusaciones:</p>
-                                        <ul className="space-y-2">
-                                            {candidate.procesos.acusaciones.map((acusacion, index) => (
-                                                <li key={index} className="flex items-start gap-2 bg-white p-3 rounded-lg">
-                                                    <span className="text-peru-red mt-1">⚠️</span>
-                                                    <span className="text-sm text-gray-700">{acusacion}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-                            </div>
-                        )}
-
-                        {/* Controversias */}
-                        {candidate.controversias_relevantes && candidate.controversias_relevantes.length > 0 && (
-                            <div className="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">⚠️</span>
-                                    Controversias Relevantes
-                                </h3>
-                                <ul className="space-y-2">
-                                    {candidate.controversias_relevantes.map((controversia, index) => (
-                                        <li key={index} className="flex items-start gap-2 bg-white p-3 rounded-lg">
-                                            <span className="text-yellow-600 mt-1">•</span>
-                                            <span className="text-sm text-gray-700">{controversia}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-
-                        {/* Economic Profile Charts */}
-                        {candidate.perfil_economico && (
-                            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                                    <span className="text-2xl">💰</span>
-                                    Perfil Económico
-                                </h3>
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="bg-white rounded-lg p-4">
-                                        <h4 className="font-semibold text-gray-900 mb-4 text-center">Ingresos y Patrimonio</h4>
-                                        <ResponsiveContainer width="100%" height={250}>
-                                            <BarChart data={economicData}>
-                                                <CartesianGrid strokeDasharray="3 3" />
-                                                <XAxis dataKey="name" fontSize={12} />
-                                                <YAxis fontSize={12} />
-                                                <Tooltip />
-                                                <Bar dataKey="value" fill="#D91023" />
-                                            </BarChart>
-                                        </ResponsiveContainer>
-                                        <p className="text-xs text-center text-gray-500 mt-2">Valores en millones de soles</p>
-                                    </div>
-                                    <div className="bg-white rounded-lg p-4">
-                                        <h4 className="font-semibold text-gray-900 mb-4 text-center">Bienes</h4>
-                                        <ResponsiveContainer width="100%" height={250}>
-                                            <BarChart data={assetsData}>
-                                                <CartesianGrid strokeDasharray="3 3" />
-                                                <XAxis dataKey="name" fontSize={12} />
-                                                <YAxis fontSize={12} />
-                                                <Tooltip />
-                                                <Bar dataKey="value" fill="#FF4757" />
-                                            </BarChart>
-                                        </ResponsiveContainer>
-                                        <p className="text-xs text-center text-gray-500 mt-2">Cantidad de bienes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-
-                        {/* Candidaturas Presidenciales */}
-                        {candidate.candidaturas_presidenciales && candidate.candidaturas_presidenciales.length > 0 && (
-                            <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">🗳️</span>
-                                    Candidaturas Presidenciales Anteriores
-                                </h3>
-                                <div className="space-y-3">
-                                    {candidate.candidaturas_presidenciales.map((candidatura, index) => (
-                                        <div key={index} className="bg-white p-4 rounded-lg">
-                                            <p className="font-semibold text-peru-red">{candidatura.anio}</p>
-                                            <p className="text-sm text-gray-700">{candidatura.resultado}</p>
+                        <AnimatePresence mode="wait">
+                            {activeTab === 'negative' ? (
+                                <motion.div
+                                    key="negative"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: 20 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="space-y-8"
+                                >
+                                    {/* Basic Info */}
+                                    <div className="grid md:grid-cols-2 gap-6">
+                                        <div className="bg-gray-50 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                                <span className="text-2xl">📊</span>
+                                                Información General
+                                            </h3>
+                                            <div className="space-y-3">
+                                                <div>
+                                                    <p className="text-sm text-gray-600">Intentos Presidenciales</p>
+                                                    <p className="text-lg font-semibold text-peru-red">{candidate.intentos_presidenciales || 0}</p>
+                                                </div>
+                                                {candidate.origen && (
+                                                    <>
+                                                        <div>
+                                                            <p className="text-sm text-gray-600">Lugar de Nacimiento</p>
+                                                            <p className="text-lg font-semibold">{candidate.origen.lugar_nacimiento}</p>
+                                                        </div>
+                                                        {candidate.origen.barrio && (
+                                                            <div>
+                                                                <p className="text-sm text-gray-600">Barrio</p>
+                                                                <p className="text-lg font-semibold">{candidate.origen.barrio}</p>
+                                                            </div>
+                                                        )}
+                                                    </>
+                                                )}
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+
+                                        <div className="bg-gray-50 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                                <span className="text-2xl">📋</span>
+                                                Cargos Principales
+                                            </h3>
+                                            <ul className="space-y-2">
+                                                {candidate.cargos_principales && candidate.cargos_principales.length > 0 ? (
+                                                    candidate.cargos_principales.map((cargo, index) => (
+                                                        <li key={index} className="flex items-start gap-2">
+                                                            <span className="text-peru-red mt-1">•</span>
+                                                            <span className="text-sm text-gray-700">{cargo}</span>
+                                                        </li>
+                                                    ))
+                                                ) : (
+                                                    <li className="text-sm text-gray-500 italic">No se registran cargos principales</li>
+                                                )}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {/* Procesos Legales */}
+                                    {candidate.procesos && (
+                                        <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                                <span className="text-2xl">⚖️</span>
+                                                Procesos Legales
+                                            </h3>
+                                            <div className="grid md:grid-cols-3 gap-4 mb-6">
+                                                <div className="bg-white rounded-lg p-4 text-center">
+                                                    <p className="text-3xl font-bold text-peru-red">
+                                                        {candidate.procesos.denuncias_procesadas || 0}
+                                                    </p>
+                                                    <p className="text-sm text-gray-600 mt-1">Denuncias Procesadas</p>
+                                                </div>
+                                                <div className="bg-white rounded-lg p-4 text-center">
+                                                    <p className="text-3xl font-bold text-peru-red">
+                                                        {candidate.procesos.denuncias_en_proceso || 0}
+                                                    </p>
+                                                    <p className="text-sm text-gray-600 mt-1">En Proceso</p>
+                                                </div>
+                                                <div className="bg-white rounded-lg p-4 text-center">
+                                                    <p className="text-3xl font-bold text-peru-red">
+                                                        {candidate.procesos.acusaciones?.length || 0}
+                                                    </p>
+                                                    <p className="text-sm text-gray-600 mt-1">Acusaciones</p>
+                                                </div>
+                                            </div>
+                                            {candidate.procesos.acusaciones && candidate.procesos.acusaciones.length > 0 && (
+                                                <div>
+                                                    <p className="font-semibold text-gray-900 mb-3">Acusaciones:</p>
+                                                    <ul className="space-y-2">
+                                                        {candidate.procesos.acusaciones.map((acusacion, index) => (
+                                                            <li key={index} className="flex items-start gap-2 bg-white p-3 rounded-lg">
+                                                                <span className="text-peru-red mt-1">⚠️</span>
+                                                                <span className="text-sm text-gray-700">{acusacion}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+
+                                    {/* Controversias */}
+                                    {candidate.controversias_relevantes && candidate.controversias_relevantes.length > 0 && (
+                                        <div className="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                                <span className="text-2xl">⚠️</span>
+                                                Controversias Relevantes
+                                            </h3>
+                                            <ul className="space-y-2">
+                                                {candidate.controversias_relevantes.map((controversia, index) => (
+                                                    <li key={index} className="flex items-start gap-2 bg-white p-3 rounded-lg">
+                                                        <span className="text-yellow-600 mt-1">•</span>
+                                                        <span className="text-sm text-gray-700">{controversia}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {/* Economic Profile Charts */}
+                                    {candidate.perfil_economico && (
+                                        <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                                <span className="text-2xl">💰</span>
+                                                Perfil Económico
+                                            </h3>
+                                            <div className="grid md:grid-cols-2 gap-6">
+                                                <div className="bg-white rounded-lg p-4">
+                                                    <h4 className="font-semibold text-gray-900 mb-4 text-center">Ingresos y Patrimonio</h4>
+                                                    <ResponsiveContainer width="100%" height={250}>
+                                                        <BarChart data={economicData}>
+                                                            <CartesianGrid strokeDasharray="3 3" />
+                                                            <XAxis dataKey="name" fontSize={12} />
+                                                            <YAxis fontSize={12} />
+                                                            <Tooltip />
+                                                            <Bar dataKey="value" fill="#D91023" />
+                                                        </BarChart>
+                                                    </ResponsiveContainer>
+                                                    <p className="text-xs text-center text-gray-500 mt-2">Valores en millones de soles</p>
+                                                </div>
+                                                <div className="bg-white rounded-lg p-4">
+                                                    <h4 className="font-semibold text-gray-900 mb-4 text-center">Bienes</h4>
+                                                    <ResponsiveContainer width="100%" height={250}>
+                                                        <BarChart data={assetsData}>
+                                                            <CartesianGrid strokeDasharray="3 3" />
+                                                            <XAxis dataKey="name" fontSize={12} />
+                                                            <YAxis fontSize={12} />
+                                                            <Tooltip />
+                                                            <Bar dataKey="value" fill="#FF4757" />
+                                                        </BarChart>
+                                                    </ResponsiveContainer>
+                                                    <p className="text-xs text-center text-gray-500 mt-2">Cantidad de bienes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* Candidaturas Presidenciales */}
+                                    {candidate.candidaturas_presidenciales && candidate.candidaturas_presidenciales.length > 0 && (
+                                        <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-6">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                                <span className="text-2xl">🗳️</span>
+                                                Candidaturas Presidenciales Anteriores
+                                            </h3>
+                                            <div className="space-y-3">
+                                                {candidate.candidaturas_presidenciales.map((candidatura, index) => (
+                                                    <div key={index} className="bg-white p-4 rounded-lg">
+                                                        <p className="font-semibold text-peru-red">{candidatura.anio}</p>
+                                                        <p className="text-sm text-gray-700">{candidatura.resultado}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </motion.div>
+                            ) : (
+                                <motion.div
+                                    key="positive"
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -20 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="space-y-8"
+                                >
+                                    <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 md:p-8">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                            <span className="text-3xl">✨</span>
+                                            Fortalezas y Aspectos Positivos
+                                        </h3>
+                                        <div className="grid gap-4">
+                                            {candidate.aspectos_positivos && candidate.aspectos_positivos.length > 0 ? (
+                                                candidate.aspectos_positivos.map((aspecto, index) => (
+                                                    <motion.div
+                                                        key={index}
+                                                        initial={{ opacity: 0, y: 10 }}
+                                                        animate={{ opacity: 1, y: 0 }}
+                                                        transition={{ delay: index * 0.1 }}
+                                                        className="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm border border-green-100"
+                                                    >
+                                                        <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">
+                                                            {index + 1}
+                                                        </div>
+                                                        <p className="text-lg text-gray-700 font-medium">
+                                                            {aspecto}
+                                                        </p>
+                                                    </motion.div>
+                                                ))
+                                            ) : (
+                                                <div className="text-center py-12">
+                                                    <p className="text-gray-500 italic">No se han registrado aspectos positivos específicos para este candidato aún.</p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+
+                                    {/* Quote or Vision (Optional heuristic based on profile) */}
+                                    <div className="bg-gradient-to-r from-peru-red to-red-600 rounded-2xl p-8 text-white shadow-xl">
+                                        <div className="flex gap-4 items-start">
+                                            <span className="text-6xl opacity-30 leading-none">"</span>
+                                            <p className="text-xl md:text-2xl font-semibold italic">
+                                                Comprometidos con el desarrollo y la estabilidad de nuestro país para el bicentenario y más allá.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </div>
                 </motion.div>
             </div>

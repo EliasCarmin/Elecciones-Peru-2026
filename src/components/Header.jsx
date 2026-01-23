@@ -19,9 +19,10 @@ const Header = () => {
                             <p className="text-xs md:text-sm text-gray-600">Conoce a los candidatos</p>
                         </div>
                     </div>
-                    <div className="hidden md:flex items-center gap-2">
-                        <div className="w-12 h-8 bg-peru-red"></div>
-                        <div className="w-12 h-8 bg-white border-2 border-gray-200"></div>
+                    <div className="hidden md:flex items-center gap-0">
+                        <div className="w-8 h-9 bg-peru-red"></div>
+                        <div className="w-8 h-9 bg-white"></div>
+                        <div className="w-8 h-9 bg-peru-red"></div>
                     </div>
                 </div>
             </div>

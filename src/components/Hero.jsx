@@ -36,7 +36,7 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.7 }}
                     >
                         <div className="bg-white rounded-lg shadow-peru p-4 md:p-6 min-w-[120px]">
-                            <div className="text-3xl md:text-4xl font-bold text-peru-red">3</div>
+                            <div className="text-3xl md:text-4xl font-bold text-peru-red">5</div>
                             <div className="text-sm md:text-base text-gray-600 mt-1">Candidatos</div>
                         </div>
                         <div className="bg-white rounded-lg shadow-peru p-4 md:p-6 min-w-[120px]">

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CandidateCard from './CandidateCard';
 import CandidateDetail from './CandidateDetail';
@@ -7,6 +7,23 @@ const CandidatesSection = ({ candidates }) => {
     const [selectedCandidate, setSelectedCandidate] = useState(null);
     const [visibleCount, setVisibleCount] = useState(5);
     const [searchTerm, setSearchTerm] = useState('');
+
+    const [showDropdown, setShowDropdown] = useState(false);
+    const searchRef = useRef(null);
+
+    // Handle click outside to close dropdown
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (searchRef.current && !searchRef.current.contains(event.target)) {
+                setShowDropdown(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     const filteredCandidates = candidates.filter(candidate => {
         const term = searchTerm.toLowerCase();
@@ -36,18 +53,61 @@ const CandidatesSection = ({ candidates }) => {
                     </p>
                 </motion.div>
 
-                <div className="mb-12 max-w-xl mx-auto">
-                    <div className="relative">
+                <div className="mb-12 max-w-xl mx-auto relative z-30" ref={searchRef}>
+                    <div className="relative group">
                         <input
                             type="text"
                             placeholder="Buscar candidato por nombre o partido..."
-                            className="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-peru-red focus:outline-none text-lg shadow-sm"
+                            className="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-peru-red focus:outline-none text-lg shadow-sm transition-all"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
+                            onFocus={() => setShowDropdown(true)}
+                            onClick={() => setShowDropdown(true)}
                         />
-                        <span className="absolute right-6 top-1/2 transform -translate-y-1/2 text-2xl">
+                        <span className="absolute right-6 top-1/2 transform -translate-y-1/2 text-2xl text-gray-400">
                             🔍
                         </span>
+
+                        {/* Dropdown Autocomplete */}
+                        <AnimatePresence>
+                            {showDropdown && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: 10 }}
+                                    className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden max-h-80 overflow-y-auto"
+                                >
+                                    {filteredCandidates.slice(0, 10).map(candidate => (
+                                        <button
+                                            key={candidate.id}
+                                            onClick={() => {
+                                                setSelectedCandidate(candidate);
+                                                setSearchTerm('');
+                                                setShowDropdown(false);
+                                            }}
+                                            className="w-full text-left px-6 py-3 hover:bg-red-50 transition-colors flex items-center gap-3 border-b border-gray-50 last:border-0"
+                                        >
+                                            <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
+                                                <img
+                                                    src={candidate.image_url || candidate.img}
+                                                    alt={candidate.nombre}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            </div>
+                                            <div>
+                                                <p className="font-bold text-gray-800">{candidate.nombre}</p>
+                                                <p className="text-xs text-gray-500">{candidate.partido}</p>
+                                            </div>
+                                        </button>
+                                    ))}
+                                    {filteredCandidates.length === 0 && (
+                                        <div className="p-4 text-center text-gray-500 italic">
+                                            No se encontraron resultados
+                                        </div>
+                                    )}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </div>
                 </div>
 

@@ -1,4 +1,7 @@
-const API_URL = 'https://elecciones-per--2026-backend-622135274332.us-central1.run.app/api/v1/analytics';
+// Use proxy in development, direct URL in production
+const API_URL = import.meta.env.DEV 
+    ? '/api/v1/analytics'
+    : 'https://elecciones-per--2026-backend-622135274332.us-central1.run.app/api/v1/analytics';
 
 // Helper to generate SHA-256 hash
 async function sha256(message) {
@@ -44,7 +47,10 @@ export const analytics = {
             const response = await fetch(`${API_URL}/session`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
+                body: JSON.stringify(payload),
+                // Add mode to handle CORS gracefully
+                mode: 'cors',
+                credentials: 'omit'
             });
 
             if (response.ok) {
@@ -53,10 +59,17 @@ export const analytics = {
                 localStorage.setItem('peru2026_session_id', currentSessionId);
                 console.log('Session initialized:', currentSessionId);
             } else {
-                console.warn('Failed to init session:', await response.text());
+                // Silently fail - don't log warnings in production
+                if (import.meta.env.DEV) {
+                    console.warn('Failed to init session:', await response.text());
+                }
             }
         } catch (error) {
-            console.error('Analytics init error:', error);
+            // Silently fail in production, only log in development
+            if (import.meta.env.DEV) {
+                console.error('Analytics init error:', error);
+            }
+            // Analytics failure should not break the app
         }
     },
 
@@ -81,8 +94,15 @@ export const analytics = {
             fetch(`${API_URL}/event`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            }).catch(e => console.error('Track event failed', e));
+                body: JSON.stringify(payload),
+                mode: 'cors',
+                credentials: 'omit'
+            }).catch(e => {
+                // Only log errors in development
+                if (import.meta.env.DEV) {
+                    console.error('Track event failed', e);
+                }
+            });
 
         } catch (error) {
             console.error('Tracking error:', error);

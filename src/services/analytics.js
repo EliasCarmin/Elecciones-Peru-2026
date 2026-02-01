@@ -59,10 +59,28 @@ export const analytics = {
                 localStorage.setItem('peru2026_session_id', currentSessionId);
                 console.log('Session initialized:', currentSessionId);
             } else {
+<<<<<<< Updated upstream
                 // Silently fail - don't log warnings in production
                 if (import.meta.env.DEV) {
                     console.warn('Failed to init session:', await response.text());
                 }
+=======
+                // Get error details for debugging
+                const errorText = await response.text();
+                let errorDetails;
+                try {
+                    errorDetails = JSON.parse(errorText);
+                } catch {
+                    errorDetails = errorText;
+                }
+                
+                console.error('Failed to init session:', {
+                    status: response.status,
+                    statusText: response.statusText,
+                    error: errorDetails,
+                    payload: payload
+                });
+>>>>>>> Stashed changes
             }
         } catch (error) {
             // Silently fail in production, only log in development
@@ -94,6 +112,7 @@ export const analytics = {
             fetch(`${API_URL}/event`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+<<<<<<< Updated upstream
                 body: JSON.stringify(payload),
                 mode: 'cors',
                 credentials: 'omit'
@@ -103,6 +122,27 @@ export const analytics = {
                     console.error('Track event failed', e);
                 }
             });
+=======
+                body: JSON.stringify(payload)
+            })
+            .then(async (response) => {
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    let errorDetails;
+                    try {
+                        errorDetails = JSON.parse(errorText);
+                    } catch {
+                        errorDetails = errorText;
+                    }
+                    console.error('Track event failed:', {
+                        status: response.status,
+                        statusText: response.statusText,
+                        error: errorDetails
+                    });
+                }
+            })
+            .catch(e => console.error('Track event network error:', e));
+>>>>>>> Stashed changes
 
         } catch (error) {
             console.error('Tracking error:', error);
